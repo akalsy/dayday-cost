@@ -16,13 +16,13 @@ module.exports = (appInfo) => {
     // 单数据库信息配置
     client: {
       // host
-      host: "localhost",
+      host: "1.116.118.236",
       // 端口号
       port: "3306",
       // 用户名
       user: "root",
       // 密码
-      password: "12345678", // 初始化密码，没设置的可以不写
+      password: "19961007Boss", // 初始化密码，没设置的可以不写
       // 数据库名
       database: "dayday-cost", // 我们新建的数据库名称
     },
