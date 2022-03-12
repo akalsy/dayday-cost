@@ -53,6 +53,7 @@ const PopupAddBill = forwardRef(({ detail = {}, onReload }, ref) => {
     const _income = list.filter((i) => i.type == 2); // 收入类型
     setExpense(_expense);
     setIncome(_income);
+    console.log(expense,income)
     // 没有 id 的情况下，说明是新建账单。
     if (!id) {
       setCurrentType(_expense[0]);
@@ -207,7 +208,7 @@ const PopupAddBill = forwardRef(({ detail = {}, onReload }, ref) => {
                 >
                   <CustomIcon
                     className={s.iconfont}
-                    type={typeMap[item.id].icon}
+                    type={typeMap[item.id]?.icon??typeMap[16].icon}
                   />
                 </span>
                 <span>{item.name}</span>

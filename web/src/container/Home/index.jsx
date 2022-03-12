@@ -34,7 +34,7 @@ const Home = () => {
 
   const getBilllList = async () => {
     const { data } = await get(
-      `api/bill/list?page=${page}&page_size=5&date=${currentSelectDate}&type_id=${
+      `api/bill/list?page=${page}&pageSize=5&date=${currentSelectDate}&type_id=${
         currentSelect.id || "all"
       }`
     );
