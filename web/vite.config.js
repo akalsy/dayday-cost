@@ -38,6 +38,8 @@ export default defineConfig({
     },
   },
   server: {
+    host: true,
+
     proxy: {
       "/api": {
         // 当遇到 /api 路径时，将其转换成 target 的值
